@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>    // 添加定位库的头文件
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CLLocationManagerDelegate>
 
+@property (strong, nonatomic)CLLocationManager *locationManager;    // 属性：位置管理者
 
 @end
 

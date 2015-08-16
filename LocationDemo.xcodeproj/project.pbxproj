@@ -14,6 +14,7 @@
 		3E6507321B38EA5E00709CF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6507311B38EA5E00709CF2 /* Images.xcassets */; };
 		3E6507351B38EA5E00709CF2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6507331B38EA5E00709CF2 /* LaunchScreen.xib */; };
 		3E6507411B38EA5E00709CF2 /* LocationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6507401B38EA5E00709CF2 /* LocationDemoTests.m */; };
+		3E65074B1B38EBAD00709CF2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E65074A1B38EBAD00709CF2 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		3E65073A1B38EA5E00709CF2 /* LocationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E65073F1B38EA5E00709CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E6507401B38EA5E00709CF2 /* LocationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationDemoTests.m; sourceTree = "<group>"; };
+		3E65074A1B38EBAD00709CF2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E65074B1B38EBAD00709CF2 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		3E6507181B38EA5E00709CF2 = {
 			isa = PBXGroup;
 			children = (
+				3E65074A1B38EBAD00709CF2 /* CoreLocation.framework */,
 				3E6507231B38EA5E00709CF2 /* LocationDemo */,
 				3E65073D1B38EA5E00709CF2 /* LocationDemoTests */,
 				3E6507221B38EA5E00709CF2 /* Products */,
@@ -344,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
